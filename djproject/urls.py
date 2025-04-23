@@ -17,8 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from app.views import amit
+from anotherApp.views import*
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('amit/', amit, name='amit')
+    path('amit/', amit, name='amit'),
+    path('feture/',feture, name='feture')
 ]
